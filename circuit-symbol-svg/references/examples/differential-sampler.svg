@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="552" viewBox="0 0 920 552" role="img" aria-labelledby="title desc">
+  <title id="title">DIFFERENTIAL SAMPLER</title>
+  <desc id="desc">Differential input/reference sampling onto two capacitors, common-mode clamps and top-plate equalization, followed by the three-stage comparator. The P and M signal and reference ports mirror about y=250. Short dashed control stubs with matching phi labels denote the same control net.</desc>
+  <metadata>{"purpose": "Standalone visual example for circuit-symbol composition.", "display_ports": ["VDD", "VSS", "VIP", "REFP", "VIM", "REFN", "CLKBS_P", "CLKBS_M", "VCM", "SWREF", "SWREFB", "D", "DB", "CLKC", "OS_TUNE_P", "OS_TUNE_M"], "function": "The two input sampling switches use CLKBS_P and CLKBS_M. Reference transmission gates use SWREF and SWREFB. Common-mode clamps and top-plate equalization use SWREF. Control aliases: phiR = SWREF; phiRB = SWREFB."}</metadata>
+  <defs>
+    <style>text{font-family:Consolas,"Liberation Mono",monospace;fill:#25613b;font-size:16px}
+.title{font-size:19px;font-weight:600}.port-label{fill:#c53e32;font-size:16px}
+.small{font-size:16px}.wire{fill:none;stroke:#425d4a;stroke-width:1.7;stroke-linecap:square;stroke-linejoin:round}
+.bus{fill:none;stroke:#425d4a;stroke-width:2.5;stroke-linejoin:round}
+.gate{fill:white;stroke:#287740;stroke-width:1.7;stroke-linejoin:round}
+.ctrl{fill:none;stroke:#69846f;stroke-width:1.35;stroke-dasharray:4 3}
+.pin{fill:#df4638}.dot{fill:#425d4a}.group{fill:none;stroke:#8ca995;stroke-width:1.2;stroke-dasharray:5 4}
+.module{fill:none;stroke:#287740;stroke-width:1.4;stroke-linejoin:miter}</style>
+  </defs>
+  <rect id="symbol-boundary" class="module" x="24" y="56" width="864" height="450" />
+  <text id="label-0" x="460.0" y="27" class="title" text-anchor="middle">DIFFERENTIAL SAMPLER</text>
+  <g data-port="VDD" data-side="top">
+    <rect x="822" y="52" width="8" height="8" class="pin" />
+    <text x="838" y="79" class="port-label" text-anchor="start" id="label-1">VDD</text>
+  </g>
+  <path class="wire" d="M826 60 L826 88" />
+  <g data-port="VSS" data-side="bottom">
+    <rect x="822" y="502" width="8" height="8" class="pin" />
+    <text x="838" y="494" class="port-label" text-anchor="start" id="label-2">VSS</text>
+  </g>
+  <path class="wire" d="M826 474 L826 502" />
+  <g data-port="VIP" data-side="left">
+    <rect class="pin" x="20" y="146" width="8" height="8" />
+    <text id="label-3" x="37" y="140" class="port-label" text-anchor="start">VIP</text>
+  </g>
+  <path class="wire" d="M28 150 L185 150" />
+  <g transform="translate(205 150)">
+    <path class="wire" d="M-20 0 H-7 M-7 0 L10 -10 M12 0 H20" />
+    <circle class="gate" cx="-7" cy="0" r="1.7" />
+    <circle class="gate" cx="12" cy="0" r="1.7" />
+  </g>
+  <path class="wire" d="M225 150 L343 150" />
+  <path class="wire" d="M343 150 H361 M369 150 H387" />
+  <path class="wire" d="M361 137 L361 163" />
+  <path class="wire" d="M369 137 L369 163" />
+  <path class="wire" d="M387 150 L600 150" />
+  <circle class="dot" cx="300" cy="150" r="2.5" />
+  <circle class="dot" cx="450" cy="150" r="2.5" />
+  <circle class="dot" cx="525" cy="150" r="2.5" />
+  <g data-port="REFP" data-side="left">
+    <rect class="pin" x="20" y="202" width="8" height="8" />
+    <text id="label-4" x="37" y="196" class="port-label" text-anchor="start">REFP</text>
+  </g>
+  <path class="wire" d="M28 206 L190 206" />
+  <rect class="gate" x="190" y="194" width="34" height="24" />
+  <text id="label-5" x="207" y="210" class="small" text-anchor="middle">TG</text>
+  <path class="wire" d="M224 206 H300 V150" />
+  <path class="ctrl" d="M207 194 L207 187" />
+  <text id="label-6" x="207" y="181" class="small" text-anchor="middle">φR</text>
+  <path class="ctrl" d="M207 218 L207 225" />
+  <text id="label-7" x="207" y="237" class="small" text-anchor="middle">φRB</text>
+  <g data-port="VIM" data-side="left">
+    <rect class="pin" x="20" y="346" width="8" height="8" />
+    <text id="label-8" x="37" y="340" class="port-label" text-anchor="start">VIM</text>
+  </g>
+  <path class="wire" d="M28 350 L185 350" />
+  <g transform="translate(0 700) scale(1 -1)">
+    <g transform="translate(205 350)">
+      <path class="wire" d="M-20 0 H-7 M-7 0 L10 -10 M12 0 H20" />
+      <circle class="gate" cx="-7" cy="0" r="1.7" />
+      <circle class="gate" cx="12" cy="0" r="1.7" />
+    </g>
+  </g>
+  <path class="wire" d="M225 350 L343 350" />
+  <path class="wire" d="M343 350 H361 M369 350 H387" />
+  <path class="wire" d="M361 337 L361 363" />
+  <path class="wire" d="M369 337 L369 363" />
+  <path class="wire" d="M387 350 L600 350" />
+  <circle class="dot" cx="300" cy="350" r="2.5" />
+  <circle class="dot" cx="450" cy="350" r="2.5" />
+  <circle class="dot" cx="525" cy="350" r="2.5" />
+  <g data-port="REFN" data-side="left">
+    <rect class="pin" x="20" y="290" width="8" height="8" />
+    <text id="label-9" x="37" y="284" class="port-label" text-anchor="start">REFN</text>
+  </g>
+  <path class="wire" d="M28 294 L190 294" />
+  <rect class="gate" x="190" y="282" width="34" height="24" />
+  <text id="label-10" x="207" y="298" class="small" text-anchor="middle">TG</text>
+  <path class="wire" d="M224 294 H300 V350" />
+  <path class="ctrl" d="M207 282 L207 275" />
+  <text id="label-11" x="207" y="269" class="small" text-anchor="middle">φR</text>
+  <path class="ctrl" d="M207 306 L207 313" />
+  <text id="label-12" x="207" y="325" class="small" text-anchor="middle">φRB</text>
+  <g data-port="CLKBS_P" data-side="left">
+    <rect class="pin" x="20" y="94" width="8" height="8" />
+    <text id="label-13" x="37" y="88" class="port-label" text-anchor="start">CLKBS_P</text>
+  </g>
+  <path class="ctrl" d="M28 98 H205 V132" />
+  <g data-port="CLKBS_M" data-side="left">
+    <rect class="pin" x="20" y="398" width="8" height="8" />
+    <text id="label-14" x="37" y="392" class="port-label" text-anchor="start">CLKBS_M</text>
+  </g>
+  <path class="ctrl" d="M28 402 H205 V368" />
+  <text id="label-15" x="365" y="133" class="small" text-anchor="middle">CREF</text>
+  <text id="label-16" x="365" y="376" class="small" text-anchor="middle">CREF</text>
+  <path class="wire" d="M450 150 V180 M450 220 V280 M450 320 V350" />
+  <g transform="translate(450 200) rotate(90)">
+    <path class="wire" d="M-20 0 H-7 M-7 0 L10 -10 M12 0 H20" />
+    <circle class="gate" cx="-7" cy="0" r="1.7" />
+    <circle class="gate" cx="12" cy="0" r="1.7" />
+  </g>
+  <g transform="translate(450 300) rotate(90)">
+    <path class="wire" d="M-20 0 H-7 M-7 0 L10 -10 M12 0 H20" />
+    <circle class="gate" cx="-7" cy="0" r="1.7" />
+    <circle class="gate" cx="12" cy="0" r="1.7" />
+  </g>
+  <g data-port="VCM" data-side="left">
+    <rect class="pin" x="20" y="246" width="8" height="8" />
+    <text id="label-17" x="37" y="240" class="port-label" text-anchor="start">VCM</text>
+  </g>
+  <path class="wire" d="M28 250 L450 250" />
+  <circle class="dot" cx="450" cy="250" r="2.5" />
+  <path class="wire" d="M525 150 V230 M525 270 V350" />
+  <g transform="translate(525 250) rotate(90)">
+    <path class="wire" d="M-20 0 H-7 M-7 0 L10 -10 M12 0 H20" />
+    <circle class="gate" cx="-7" cy="0" r="1.7" />
+    <circle class="gate" cx="12" cy="0" r="1.7" />
+  </g>
+  <path class="ctrl" d="M467 200 L485 200" />
+  <text id="label-18" x="491" y="204" class="small" text-anchor="start">φR</text>
+  <path class="ctrl" d="M467 300 L485 300" />
+  <text id="label-19" x="491" y="304" class="small" text-anchor="start">φR</text>
+  <path class="ctrl" d="M542 250 L560 250" />
+  <text id="label-20" x="566" y="254" class="small" text-anchor="start">φR</text>
+  <g data-port="SWREF" data-side="bottom">
+    <rect x="181" y="502" width="8" height="8" class="pin" />
+    <text x="171" y="494" class="port-label" transform="rotate(-90 171 494)" id="label-21">SWREF</text>
+  </g>
+  <path class="ctrl" d="M185 502 L185 438" />
+  <text id="label-22" x="185" y="426" class="" text-anchor="middle">φR</text>
+  <g data-port="SWREFB" data-side="bottom">
+    <rect x="321" y="502" width="8" height="8" class="pin" />
+    <text x="311" y="494" class="port-label" transform="rotate(-90 311 494)" id="label-23">SWREFB</text>
+  </g>
+  <path class="ctrl" d="M325 502 L325 438" />
+  <text id="label-24" x="325" y="426" class="" text-anchor="middle">φRB</text>
+  <path class="gate" d="M600 122 L800 250 L600 378 Z" />
+  <text id="label-25" x="612" y="156" class="" text-anchor="start" style="font-size:24px">+</text>
+  <text id="label-26" x="612" y="356" class="" text-anchor="start" style="font-size:24px">−</text>
+  <text id="label-27" x="681" y="255" class="small" text-anchor="middle">3-stage</text>
+  <path class="wire" d="M765.625 228 L888 228" />
+  <g data-port="D" data-side="right">
+    <rect class="pin" x="884" y="224" width="8" height="8" />
+    <text id="label-28" x="875" y="218" class="port-label" text-anchor="end">D</text>
+  </g>
+  <circle class="gate" cx="769.625" cy="272" r="4" />
+  <path class="wire" d="M773.625 272 L888 272" />
+  <g data-port="DB" data-side="right">
+    <rect class="pin" x="884" y="268" width="8" height="8" />
+    <text id="label-29" x="875" y="262" class="port-label" text-anchor="end">DB</text>
+  </g>
+  <g data-port="CLKC" data-side="bottom">
+    <rect x="616" y="502" width="8" height="8" class="pin" />
+    <text x="606" y="494" class="port-label" transform="rotate(-90 606 494)" id="label-30">CLKC</text>
+  </g>
+  <path class="wire" d="M620 502 V365.2" />
+  <g data-port="OS_TUNE_P" data-side="bottom">
+    <rect x="656" y="502" width="8" height="8" class="pin" />
+    <text x="646" y="494" class="port-label" transform="rotate(-90 646 494)" id="label-31">OS_TUNE_P</text>
+  </g>
+  <path class="wire" d="M660 502 V339.6" />
+  <g data-port="OS_TUNE_M" data-side="bottom">
+    <rect x="696" y="502" width="8" height="8" class="pin" />
+    <text x="686" y="494" class="port-label" transform="rotate(-90 686 494)" id="label-32">OS_TUNE_M</text>
+  </g>
+  <path class="wire" d="M700 502 V314" />
+</svg>

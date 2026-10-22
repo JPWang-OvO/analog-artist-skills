@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="432" viewBox="0 0 640 432">
+<title>Bootstrapped sampling switch</title>
+<desc>Functional symbol of a bootstrapped sampling switch. Terminal order: VDD VSS CLK VIN VOUT BS_CTRL. Parallel bootstrap capacitors are represented by CBOOT. Phi equals CLK; phi switches conduct during tracking (CLK high); phi-bar switches conduct during precharge/hold (CLK low). Ideal switch glyphs summarize the transistor control network rather than reproducing individual MOS gate connections. During precharge the capacitor is charged between VDD and VSS, and BS_CTRL is discharged. During track its bottom follows VIN and its top drives BS_CTRL, the gate of the main sampling NMOS. Local ground references are VSS. NMOS body and protection/pump transistor details are omitted from this functional abstraction. VIN/VOUT form the pass path; BS_CTRL remains an exposed output.</desc>
+<metadata>{"purpose":"Standalone visual example for circuit-symbol composition.","terminal_order":["VDD","VSS","CLK","VIN","VOUT","BS_CTRL"],"phase":"phi = CLK; high = track","capacitor":"CBOOT represents the parallel bootstrap capacitance","representation":"functional switched-capacitor equivalent"}</metadata>
+<style>text{font-family:'DejaVu Sans',sans-serif;font-size:16px;fill:#287740}.wire{stroke:#425d4a;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.shape{stroke:#287740;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.contact{stroke:#425d4a;stroke-width:1.5;fill:white}.node{fill:#425d4a}.pin{fill:#c53e32}.portlabel{fill:#c53e32}.phase{text-anchor:middle}.bar{text-decoration:overline}</style>
+<rect width="640" height="432" fill="white"/>
+<text x="320" y="34" text-anchor="middle" font-weight="600">BOOTSTRAPPED SWITCH</text>
+<rect class="shape" x="40" y="64" width="560" height="336" stroke-width="1.5"/>
+<g id="input-tracking" data-active-phase="CLK=1">
+<path class="wire" d="M112 328V160H160 M192 160H256"/>
+<path class="shape" d="M160 160L186 144"/>
+<circle class="contact" cx="160" cy="160" r="3"/>
+<circle class="contact" cx="192" cy="160" r="3"/>
+<text x="176" y="132" text-anchor="middle" class="phase">φ</text>
+<circle class="node" cx="112" cy="328" r="3"/>
+<circle class="node" cx="224" cy="160" r="3"/>
+</g>
+<g id="bootstrap-capacitor">
+<path class="shape" d="M256 140V180 M272 140V180"/>
+<path class="wire" d="M272 160H336"/>
+<text x="264" y="204" text-anchor="middle" class="">CBOOT</text>
+</g>
+<g id="precharge-vdd" data-active-phase="CLK=0">
+<path class="wire" d="M304 64V96 M304 128V160"/>
+<path class="shape" d="M304 96L320 122"/>
+<circle class="contact" cx="304" cy="96" r="3"/>
+<circle class="contact" cx="304" cy="128" r="3"/>
+<text x="276" y="118" text-anchor="middle" class="bar">φ</text>
+<circle class="node" cx="304" cy="160" r="3"/>
+</g>
+<g id="boost-transfer" data-active-phase="CLK=1">
+<path class="shape" d="M336 160L362 144"/>
+<circle class="contact" cx="336" cy="160" r="3"/>
+<circle class="contact" cx="368" cy="160" r="3"/>
+<text x="352" y="132" text-anchor="middle" class="phase">φ</text>
+<path class="wire" d="M368 160H600 M416 160V296"/>
+<circle class="node" cx="416" cy="160" r="3"/>
+</g>
+<g id="bottom-reset" data-active-phase="CLK=0">
+<path class="wire" d="M224 160V224 M224 256V280"/>
+<path class="shape" d="M224 224L240 250"/>
+<circle class="contact" cx="224" cy="224" r="3"/>
+<circle class="contact" cx="224" cy="256" r="3"/>
+<text x="252" y="246" text-anchor="middle" class="bar">φ</text>
+<path class="shape" d="M212 280H236 M216 286H232 M220 292H228"/>
+<text x="208" y="290" text-anchor="end" class="">VSS</text>
+</g>
+<g id="gate-reset" data-active-phase="CLK=0">
+<path class="wire" d="M520 160V224 M520 256V280"/>
+<path class="shape" d="M520 224L536 250"/>
+<circle class="contact" cx="520" cy="224" r="3"/>
+<circle class="contact" cx="520" cy="256" r="3"/>
+<text x="548" y="246" text-anchor="middle" class="bar">φ</text>
+<path class="shape" d="M508 280H532 M512 286H528 M516 292H524"/>
+<text x="504" y="290" text-anchor="end" class="">VSS</text>
+<circle class="node" cx="520" cy="160" r="3"/>
+</g>
+<g id="main-pass-nmos">
+<path class="wire" d="M40 328H392V312 M440 312V328H600"/>
+<path class="shape" d="M392 312H440 M392 296H440"/>
+<text x="416" y="356" text-anchor="middle" class="">NMOS</text>
+</g>
+<g id="clock-phase">
+<path class="wire" d="M40 368H176"/>
+<text x="188" y="374" text-anchor="start" class="">φ</text>
+</g>
+<g id="vss-reference">
+<path class="wire" d="M520 400V376"/>
+</g>
+<g data-port="VDD" data-side="top" data-direction="inputOutput"><rect class="pin" x="300" y="60" width="8" height="8"/>
+<text x="318" y="86" text-anchor="start" class="portlabel">VDD</text>
+</g>
+<g data-port="VSS" data-side="bottom" data-direction="inputOutput"><rect class="pin" x="516" y="396" width="8" height="8"/>
+<text x="534" y="390" text-anchor="start" class="portlabel">VSS</text>
+</g>
+<g data-port="CLK" data-side="left" data-direction="inputOutput"><rect class="pin" x="36" y="364" width="8" height="8"/>
+<text x="52" y="358" text-anchor="start" class="portlabel">CLK</text>
+</g>
+<g data-port="VIN" data-side="left" data-direction="inputOutput"><rect class="pin" x="36" y="324" width="8" height="8"/>
+<text x="52" y="318" text-anchor="start" class="portlabel">VIN</text>
+</g>
+<g data-port="VOUT" data-side="right" data-direction="output"><rect class="pin" x="596" y="324" width="8" height="8"/>
+<text x="588" y="318" text-anchor="end" class="portlabel">VOUT</text>
+</g>
+<g data-port="BS_CTRL" data-side="right" data-direction="output"><rect class="pin" x="596" y="156" width="8" height="8"/>
+<text x="588" y="150" text-anchor="end" class="portlabel">BS_CTRL</text>
+</g>
+</svg>

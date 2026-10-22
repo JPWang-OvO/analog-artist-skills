@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="416" viewBox="0 0 640 416">
+  <title>CLK_DCDL7</title>
+  <desc>Seven cascaded binary-weighted delay/bypass stages, controlled by C&lt;0:6&gt;. RN clears every stage and qualifies the output. Delay weights are 1,2,4,8,16,32,64.</desc>
+  <style>text{font-family:Consolas,"Liberation Mono",monospace;font-size:16px;fill:#25613b}
+.port{fill:#c53e32}.wire,.gate,.body{fill:none;stroke:#287740;stroke-width:1.6;stroke-linejoin:round}
+.bus{fill:none;stroke:#425d4a;stroke-width:3.2;stroke-linejoin:round}.dot,.flow{fill:#425d4a;stroke:none}
+.circle{fill:white;stroke:#287740;stroke-width:1.6}.pin{fill:#c53e32;stroke:none}</style>
+  <rect x="32" y="96" width="576" height="256" class="body" />
+  <text x="320.0" y="32" text-anchor="middle" class="">CLK_DCDL7</text>
+  <text x="32" y="64" text-anchor="start" class="">I0</text>
+  <g data-port="I" data-side="left" data-direction="input">
+    <rect x="28.8" y="204.8" width="6.4" height="6.4" class="pin" />
+  </g>
+  <polyline points="32,208 64,208" class="wire" />
+  <text x="40" y="200" text-anchor="start" class="port">I</text>
+  <g data-port="Z" data-side="right" data-direction="output">
+    <rect x="604.8" y="204.8" width="6.4" height="6.4" class="pin" />
+  </g>
+  <polyline points="608,208 576,208" class="wire" />
+  <text x="600" y="200" text-anchor="end" class="port">Z</text>
+  <polyline points="64,208 80,208 80,160" class="wire" />
+  <rect x="80" y="144" width="48" height="32" class="gate" />
+  <text x="104.0" y="166.0" text-anchor="middle" class="">1t</text>
+  <polyline points="128,160 136,160 136,192 144,192" class="wire" />
+  <polyline points="80,208 80,224 144,224" class="wire" />
+  <circle cx="80" cy="208" r="3.2" class="dot" />
+  <polygon points="144,180.8 144,235.2 168,220.8 168,195.2" class="gate" />
+  <polyline points="156,228 156,272 172,288" class="wire" />
+  <text x="168" y="264" text-anchor="start" class="">0</text>
+  <polyline points="240,208 256,208 256,160" class="wire" />
+  <rect x="256" y="144" width="48" height="32" class="gate" />
+  <text x="280.0" y="166.0" text-anchor="middle" class="">2t</text>
+  <polyline points="304,160 312,160 312,192 320,192" class="wire" />
+  <polyline points="256,208 256,224 320,224" class="wire" />
+  <circle cx="256" cy="208" r="3.2" class="dot" />
+  <polygon points="320,180.8 320,235.2 344,220.8 344,195.2" class="gate" />
+  <polyline points="332,228 332,272 348,288" class="wire" />
+  <text x="344" y="264" text-anchor="start" class="">1</text>
+  <polyline points="416,208 432,208 432,160" class="wire" />
+  <rect x="432" y="144" width="48" height="32" class="gate" />
+  <text x="456.0" y="166.0" text-anchor="middle" class="">64t</text>
+  <polyline points="480,160 488,160 488,192 496,192" class="wire" />
+  <polyline points="432,208 432,224 496,224" class="wire" />
+  <circle cx="432" cy="208" r="3.2" class="dot" />
+  <polygon points="496,180.8 496,235.2 520,220.8 520,195.2" class="gate" />
+  <polyline points="508,228 508,272 524,288" class="wire" />
+  <text x="520" y="264" text-anchor="start" class="">6</text>
+  <polyline points="168,208 240,208" class="wire" />
+  <polyline points="344,208 368,208" class="wire" />
+  <text x="388" y="216" text-anchor="middle" class="">...</text>
+  <polyline points="408,208 416,208" class="wire" />
+  <polyline points="520,208 544,208" class="wire" />
+  <rect x="544" y="192" width="32" height="32" class="gate" />
+  <text x="560.0" y="214.0" text-anchor="middle" class="">&amp;</text>
+  <g data-port="RN" data-side="left" data-direction="input">
+    <rect x="28.8" y="316.8" width="6.4" height="6.4" class="pin" />
+  </g>
+  <polyline points="32,320 112,320" class="wire" />
+  <text x="40" y="312" text-anchor="start" class="port">RN</text>
+  <polyline points="560,224 560,264" class="wire" />
+  <text x="568" y="264" text-anchor="start" class="">RN</text>
+  <polyline points="172,288 524,288" class="bus" />
+  <g data-port="C&lt;0:6&gt;" data-side="bottom" data-direction="input">
+    <rect x="316.8" y="348.8" width="6.4" height="6.4" class="pin" />
+  </g>
+  <polyline points="320,352 320,288" class="bus" />
+  <text x="352" y="344" text-anchor="start" class="port">C&lt;0:6&gt;</text>
+  <polyline points="313.6,328 326.4,312" class="bus" />
+  <text x="336" y="326" text-anchor="start" class="">7</text>
+  <g data-port="VDD" data-side="top" data-direction="inputOutput">
+    <rect x="556.8" y="92.8" width="6.4" height="6.4" class="pin" />
+  </g>
+  <polyline points="560,96 560,128" class="wire" />
+  <text x="568" y="120" text-anchor="start" class="port">VDD</text>
+  <g data-port="VSS" data-side="bottom" data-direction="inputOutput">
+    <rect x="556.8" y="348.8" width="6.4" height="6.4" class="pin" />
+  </g>
+  <polyline points="560,352 560,320" class="wire" />
+  <text x="552" y="344" text-anchor="start" class="port" transform="rotate(-90 552 344)">VSS</text>
+</svg>

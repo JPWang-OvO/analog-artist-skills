@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="702" height="365" viewBox="0 0 702 365" role="img" aria-labelledby="title desc">
+  <title id="title">MULTISTAGE COMPARATOR</title>
+  <desc id="desc">Three-stage dynamic comparator: clocked differential input/trim stage, complementary inverter gain stage, regenerative latch and output buffers.</desc>
+  <metadata>{"purpose": "Standalone visual example for circuit-symbol composition.", "display_ports": ["VDD", "VSS", "VIP", "VIM", "OS_TUNE_P", "OS_TUNE_M", "CLKC", "DB", "D"], "function": "A clocked differential stage feeds an inverter gain stage, regenerative latch, and output buffers. The upper path ends at DB and the lower path at D. Crossed feedback paths have no junction at the crossing."}</metadata>
+  <defs>
+    <style>text{font-family:Consolas,"Liberation Mono",monospace;fill:#25613b;font-size:16px}
+.title{font-size:19px;font-weight:600}.port-label{fill:#c53e32;font-size:16px}
+.small{font-size:16px}.wire{fill:none;stroke:#425d4a;stroke-width:1.7;stroke-linecap:square;stroke-linejoin:round}
+.bus{fill:none;stroke:#425d4a;stroke-width:2.5;stroke-linejoin:round}
+.gate{fill:white;stroke:#287740;stroke-width:1.7;stroke-linejoin:round}
+.ctrl{fill:none;stroke:#69846f;stroke-width:1.35;stroke-dasharray:4 3}
+.pin{fill:#df4638}.dot{fill:#425d4a}.group{fill:none;stroke:#8ca995;stroke-width:1.2;stroke-dasharray:5 4}
+.module{fill:none;stroke:#287740;stroke-width:1.4;stroke-linejoin:miter}</style>
+  </defs>
+  <rect id="symbol-boundary" class="module" x="24" y="52" width="646" height="286" />
+  <text id="label-0" x="351" y="27" class="title" text-anchor="middle">MULTISTAGE COMPARATOR</text>
+  <g data-port="VDD" data-side="top">
+    <rect x="624" y="48" width="8" height="8" class="pin" />
+    <text x="640" y="75" class="port-label" text-anchor="start" id="label-1">VDD</text>
+  </g>
+  <path class="wire" d="M628 56 L628 84" />
+  <g data-port="VSS" data-side="bottom">
+    <rect x="624" y="334" width="8" height="8" class="pin" />
+    <text x="640" y="326" class="port-label" text-anchor="start" id="label-2">VSS</text>
+  </g>
+  <path class="wire" d="M628 306 L628 334" />
+  <g data-port="VIP" data-side="left">
+    <rect class="pin" x="20" y="112" width="8" height="8" />
+    <text id="label-3" x="37" y="106" class="port-label" text-anchor="start">VIP</text>
+  </g>
+  <path class="wire" d="M28 116 L150 116" />
+  <g data-port="VIM" data-side="left">
+    <rect class="pin" x="20" y="162" width="8" height="8" />
+    <text id="label-4" x="37" y="156" class="port-label" text-anchor="start">VIM</text>
+  </g>
+  <path class="wire" d="M28 166 L150 166" />
+  <path class="gate" d="M150 82 L270 153 L150 224 Z" />
+  <text id="label-5" x="162" y="122" class="" text-anchor="start">+</text>
+  <text id="label-6" x="162" y="172" class="" text-anchor="start">−</text>
+  <text id="label-7" x="189" y="155" class="" text-anchor="start">gm</text>
+  <g data-port="OS_TUNE_P" data-side="left">
+    <rect class="pin" x="20" y="246" width="8" height="8" />
+    <text id="label-8" x="37" y="240" class="port-label" text-anchor="start">OS_TUNE_P</text>
+  </g>
+  <path class="wire" d="M28 250 H170 V212" />
+  <g data-port="OS_TUNE_M" data-side="left">
+    <rect class="pin" x="20" y="288" width="8" height="8" />
+    <text id="label-9" x="37" y="282" class="port-label" text-anchor="start">OS_TUNE_M</text>
+  </g>
+  <path class="wire" d="M28 292 H196 V197" />
+  <g data-port="CLKC" data-side="bottom">
+    <rect x="212" y="334" width="8" height="8" class="pin" />
+    <text x="230" y="326" class="port-label" text-anchor="start" transform="rotate(-90 230 326)" id="label-10">CLKC</text>
+  </g>
+  <path class="wire" d="M216 334 L216 184.95" />
+  <text id="label-11" x="230" y="226" class="small" text-anchor="start">φ</text>
+  <path class="wire" d="M225 126 H292" />
+  <path class="wire" d="M225 180 H292" />
+  <text id="label-12" x="259" y="115" class="small" text-anchor="middle">VP1</text>
+  <text id="label-13" x="259" y="199" class="small" text-anchor="middle">VN1</text>
+  <path class="gate" d="M292 110 L320 126 L292 142 Z" />
+  <circle class="gate" cx="325" cy="126" r="5" />
+  <path class="gate" d="M292 164 L320 180 L292 196 Z" />
+  <circle class="gate" cx="325" cy="180" r="5" />
+  <path class="wire" d="M330 126 L390 126" />
+  <path class="wire" d="M330 180 L390 180" />
+  <text id="label-14" x="360" y="115" class="small" text-anchor="middle">VN2</text>
+  <text id="label-15" x="360" y="199" class="small" text-anchor="middle">VP2</text>
+  <rect class="gate" x="390" y="91" width="122" height="124" />
+  <text id="label-16" x="451" y="81" class="small" text-anchor="middle">LATCH</text>
+  <path class="wire" d="M390 126 L432 126" />
+  <path class="wire" d="M390 180 L432 180" />
+  <path class="gate" d="M432 110 L460 126 L432 142 Z" />
+  <circle class="gate" cx="465" cy="126" r="5" />
+  <path class="gate" d="M432 164 L460 180 L432 196 Z" />
+  <circle class="gate" cx="465" cy="180" r="5" />
+  <path class="wire" d="M470 126 L512 126" />
+  <path class="wire" d="M470 180 L512 180" />
+  <path class="wire" d="M494 126 V140 L408 166 V180 M494 180 V166 L408 140 V126" />
+  <path class="wire" d="M512 126 L542 126" />
+  <path class="wire" d="M512 180 L542 180" />
+  <text id="label-17" x="527" y="115" class="small" text-anchor="middle">LP</text>
+  <text id="label-18" x="527" y="199" class="small" text-anchor="middle">LM</text>
+  <path class="gate" d="M542 110 L572 126 L542 142 Z" />
+  <circle class="gate" cx="577" cy="126" r="5" />
+  <path class="gate" d="M542 164 L572 180 L542 196 Z" />
+  <circle class="gate" cx="577" cy="180" r="5" />
+  <path class="wire" d="M582 126 L670 126" />
+  <path class="wire" d="M582 180 L670 180" />
+  <g data-port="DB" data-side="right">
+    <rect x="666" y="122" width="8" height="8" class="pin" />
+    <text x="657" y="116" class="port-label" text-anchor="end" id="label-19">DB</text>
+  </g>
+  <g data-port="D" data-side="right">
+    <rect x="666" y="176" width="8" height="8" class="pin" />
+    <text x="657" y="170" class="port-label" text-anchor="end" id="label-20">D</text>
+  </g>
+</svg>

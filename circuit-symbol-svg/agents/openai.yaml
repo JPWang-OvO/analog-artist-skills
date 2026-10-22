@@ -1,0 +1,4 @@
+interface:
+  display_name: "电路功能 SVG Symbol"
+  short_description: "从参考图学习视觉风格与构图手法，依据目标电路独立绘制 SVG symbol"
+  default_prompt: "使用 $circuit-symbol-svg，浏览提供的参考图并借鉴其视觉风格与构图手法，依据目标电路的接口与功能独立设计 SVG symbol。"

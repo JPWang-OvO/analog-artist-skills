@@ -1,0 +1,4 @@
+interface:
+  display_name: "Virtuoso 原理图与 Symbol 绘图"
+  short_description: "按功能组织紧凑可读的原理图与 symbol，保留原生 Note 和可重建配置"
+  default_prompt: "使用 $virtuoso-drawing 按已确认的绘图规范优化指定 schematic 和 symbol，并检查电气连接与实际图面。"
